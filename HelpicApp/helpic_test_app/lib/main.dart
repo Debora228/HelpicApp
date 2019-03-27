@@ -41,7 +41,21 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  IconButton _buildButton(IconData icon){
+  IconButton _circleButton(IconData icon){
+    return IconButton(
+      onPressed: (){},
+      icon: Icon(icon, color: Colors.white,),
+    );
+  }
+
+  IconButton _homeButton(IconData icon){
+    return IconButton(
+      onPressed: (){},
+      icon: Icon(icon, color: Colors.white,),
+    );
+  }
+
+  IconButton _cameraButton(IconData icon){
     return IconButton(
       onPressed: (){},
       icon: Icon(icon, color: Colors.white,),
@@ -57,9 +71,9 @@ class _HomePageState extends State<HomePage> {
         Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          _buildButton(Icons.radio_button_unchecked),
-          _buildButton(Icons.home),
-          _buildButton(Icons.photo_camera),
+          _circleButton(Icons.radio_button_unchecked),
+          _homeButton(Icons.home),
+          _cameraButton(Icons.photo_camera),
          ],
         )
       ],
