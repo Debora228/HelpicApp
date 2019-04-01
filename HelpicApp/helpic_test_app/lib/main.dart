@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:helpic_test_app/pages/Screen2.dart';
 void main() => runApp(MobileApp());
 
 class MobileApp extends StatelessWidget {
@@ -8,6 +9,9 @@ class MobileApp extends StatelessWidget {
     return MaterialApp(
       title: "Helpic",
       home: HomePage(),
+      routes: <String, WidgetBuilder> {
+      '/Screen2': (BuildContext context) => new Screen2()
+      },
     );
   }
 }
@@ -50,8 +54,9 @@ class _HomePageState extends State<HomePage> {
 
   IconButton _homeButton(IconData icon){
     return IconButton(
-      onPressed: (){},
+      onPressed: (){Navigator.of(context).pushNamed('/screen2');},
       icon: Icon(icon, color: Colors.white,),
+      
     );
   }
 
@@ -71,9 +76,12 @@ class _HomePageState extends State<HomePage> {
         Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          _circleButton(Icons.radio_button_unchecked),
-          _homeButton(Icons.home),
-          _cameraButton(Icons.photo_camera),
+          new RaisedButton(onPressed:(){
+              _homeButton(Icons.home);
+
+          },)
+          //_circleButton(Icons.radio_button_unchecked),
+         //_cameraButton(Icons.photo_camera),
          ],
         )
       ],
