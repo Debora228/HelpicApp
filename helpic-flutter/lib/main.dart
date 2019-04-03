@@ -27,15 +27,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
-Routes {
-  static final routes = <String, WidgetBuilder>{
-    rc.Routes.splash: (BuildContext context) => SplashScreen(),
-    rc.Routes.search: (BuildContext context) => HomeScreen(),
-    rc.Routes.detail: (BuildContext context) => DetailScreen(),
-    rc.Routes.favourites: (BuildContext context) => FavouritesScreen(),
-    rc.Routes.downloads: (BuildContext context) => DownloadsScreen(),
-    rc.Routes.downloadProgress: (BuildContext context) => DownloadProgressScreen(),
-  };
-}
