@@ -17,11 +17,6 @@ Jorge Soares de Farias Junior
 Savyo Nascimento de Farias
 ```
 
-### Como instalar:
-O link para download do .apk do Helpic está dinponivel no seguinte link: 
-
-* Antes de fazer a instalação será necessário acessar as configurações de seu dispositivo e permitir a instalação de apps por terceiros.
-
 ### Como utilizar o app:
 * Após a instalação você terá uma tela com uma lista de imagens e videos e uma barra de busca localizada acima onde será possivel fazer busca de temas em especifico.
 
